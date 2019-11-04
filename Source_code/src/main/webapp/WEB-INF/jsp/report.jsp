@@ -29,6 +29,8 @@
     </script>
 </head>
 <body>
+  <jsp:include page="index.jsp" />
+    <br />
     <table id="example" class="display nowrap" style="width:100%">
         <thead>
             <tr>

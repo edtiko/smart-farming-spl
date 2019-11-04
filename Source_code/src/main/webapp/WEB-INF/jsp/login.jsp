@@ -11,7 +11,7 @@
 <body style="text-align:center">
 <h1>Autenticaci&oacute;n</h2>
 <br />
-	<form method="get" action="http://localhost:8080/chart">
+	<form method="get" action="http://localhost:8080/">
 	<div>
 	<input type="text" placeholder="usuario"  />
 	</div>
@@ -27,7 +27,7 @@
 	<br />
 	<h1>Login con Redes</h2>
 	<br />
-	<a href="http://localhost:8080/chart">
+	<a href="http://localhost:8080/">
 	<img style="width: 20%" src="https://miro.medium.com/max/800/1*InDQe4dYjE72rNr37TVI1Q.png" />
 	</a>
 </body>

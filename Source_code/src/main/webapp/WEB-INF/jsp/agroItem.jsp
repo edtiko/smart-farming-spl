@@ -11,6 +11,8 @@
 </head>
 
 <body style="text-align:center">
+  <jsp:include page="index.jsp" />
+    <br />
     <h1>Crear M&oacute;dulo</h2>
         <br />
         <form>

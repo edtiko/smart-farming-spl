@@ -11,4 +11,10 @@ public class AuthResource {
 
         return "login";
     }
+
+    @RequestMapping("/")
+    public String index() {
+
+        return "index";
+    }
 }

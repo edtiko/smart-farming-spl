@@ -22,7 +22,7 @@ public class InventaryResource {
     @Autowired
     private InventaryRepository inventaryRepository;
 
-    @RequestMapping("/chart")
+    @RequestMapping("/produccion")
     public String productividad(ModelMap modelMap) {
         List<List<Map<Object, Object>>> canvasjsDataList = inventaryService.getCanvasjsChartData();
         modelMap.addAttribute("dataPointsList", canvasjsDataList);
@@ -30,7 +30,7 @@ public class InventaryResource {
     }
 
 
-    @RequestMapping("/chart2")
+    @RequestMapping("/productividad")
     public String desperdicios(ModelMap modelMap) {
         List<List<Map<Object, Object>>> canvasjsDataList = inventaryService.getCanvasjsChartData2();
         modelMap.addAttribute("dataPointsList", canvasjsDataList);
@@ -38,14 +38,14 @@ public class InventaryResource {
     }
 
 
-    @RequestMapping("/chart3")
+    @RequestMapping("/temperatura")
     public String springMVC(ModelMap modelMap) {
         List<List<Map<Object, Object>>> canvasjsDataList = inventaryService.getCanvasjsChartData3();
         modelMap.addAttribute("dataPointsList", canvasjsDataList);
         return "chart3";
     }
 
-    @RequestMapping("/report")
+    @RequestMapping("/reporte")
     public String reporte(ModelMap modelMap) {
         List<Inventary> reportList = inventaryRepository.findAll();
         modelMap.addAttribute("reportList", reportList);
