@@ -1,0 +1,5 @@
+{ 
+   "CustomizationPoints": ["dbconfig"],
+   "PointBracketsLans": ["java"],
+   "IDs": ["application-Control"]
+}
